@@ -1,0 +1,49 @@
+\begin{SgAlgorithm}[t]
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+    \SetKwFunction{GenerateAlphaVeins}{GenerateAlphaVeins}
+    \SetKwFunction{GenerateUniLeaf}{GenerateUnilobedLeaf}
+    \SetKwFunction{IntersectLobes}{IntersectLobes}
+    \SetKwFunction{FitBSpline}{FitBSpline}
+    \SetKwFunction{GenerateLaminarMargin}{GenerateLaminarMargin}
+    \SetKwFunction{Index}{Index}
+   \BlankLine
+    \Input{Parameters of the leaf model.}
+    \Output{Laminar shape $M$ as a triangle mesh.}
+    \BlankLine
+    $\{\alpha_i\} \leftarrow \GenerateAlphaVeins(s_0^l, s_0^r, \Delta s)$ \;
+    $L\leftarrow \GenerateUniLeaf(\theta(B^l), \theta(B^r), \theta(A^l), \theta(A^r), \vect{W}^l, \vect{W}^r)$ \;
+    \BlankLine
+    \ForEach{$\alpha$-vein $\alpha_i$}
+    {%
+        $L_i \leftarrow L$ \;
+        $L_i \leftarrow T_i\cdot L_i$ \;
+    }
+    \BlankLine
+    \For{$i=1$ \KwTo $n-1$}
+    {%
+        $\vect{p}^I(v_i) \leftarrow$ \IntersectLobes{$L_i$, $L_{i+1}$} \;
+        $\vect{d}(v_i) \leftarrow \dfrac{\vect{d}(\alpha_i) + \vect{d}(\alpha_{i+1})}{2}$ \;
+        \If{$p(v)$ or $\theta(v)$ is specified}
+        {%
+            $\vect{p}(v_i) \leftarrow  \vect{p}^I(v_i) + p(v) l(\alpha_i) \vect{d}(v_i)$ \;
+        }
+    }
+    \BlankLine
+    \For{$i=1$ \KwTo $n-1$}
+    {%
+        \eIf{$p(v)$ or $\theta(v)$ is not specified}
+        {%
+            $M \leftarrow M \cup \left\{\vect{p}_j \mid j \in L_i \wedge \Index(\vect{q}(\alpha_i), L_i) \leq j \leq \Index(\vect{p}^I(v_i), L_i) \right\}$ \;
+          $M \leftarrow M \cup \left\{\vect{p}_j \mid j \in L_{i+1} \wedge \Index(\vect{p}^I(v_i), L_{i+1}) < j \leq \Index(\vect{q}(\alpha_{i+1}), L_{i+1})\right\}$ \;
+        }
+        {%
+           $b_1 \leftarrow \FitBSpline(\vect{q}(\alpha_i), \theta(\vect{q}(\alpha_i)), \vect{W}^l(\alpha_i), \vect{r}(v_i), \theta(v_i))$ \;
+            $b_2 \leftarrow \FitBSpline(\vect{r}(v_i), \theta(v_i), \vect{W}^r(\alpha_{i+1}), \vect{q}(\alpha_{i+1}), \theta(\vect{q}(\alpha_{i+1})))$ \;
+            Discretize $b_1$ and append the points to $M$ \;
+            Discretize $b_2$ and append the points to $M$ \;
+        }
+    }
+    \caption[Laminar shape generation algorithm for multilobed leaves]{Laminar shape generation algorithm for multilobed leaves.}
+    \label{algo:Ch6-ShapeGen}
+\end{SgAlgorithm}
