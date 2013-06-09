@@ -1,9 +1,6 @@
 # SPhDThesis #
 *Saurabh Garg ([saurabhgarg@mysoc.net](mailto:saurabhgarg@mysoc.net "saurabhgarg@mysoc.net"))*
 
-----------
-
-
 SPhDThesis is a latex document class for writing PhD thesis. It is based on the "NUS Guidelines on Format of Research Thesis Submitted For Examination" (http://www.nus.edu.sg/registrar/event/gd-thesisexam.html).
 
 SPhDThesis document class can only be used with pdflatex and doesn't work with latex. This means that all figures should be either in pdf, png, or jpg format. If you have eps figures then they must be converted to pdf.
