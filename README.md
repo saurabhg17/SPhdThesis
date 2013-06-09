@@ -1,4 +1,8 @@
 # SPhDThesis #
+*Saurabh Garg ([saurabhgarg@mysoc.net](mailto:saurabhgarg@mysoc.net "saurabhgarg@mysoc.net"))*
+
+----------
+
 
 SPhDThesis is a latex document class for writing PhD thesis. It is based on the "NUS Guidelines on Format of Research Thesis Submitted For Examination" (http://www.nus.edu.sg/registrar/event/gd-thesisexam.html).
 
