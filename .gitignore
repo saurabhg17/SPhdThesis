@@ -220,3 +220,6 @@ pip-log.txt
 /example/temp
 /example/example.tps
 /example/example.tcp
+
+/example/thesis.tcp
+/example/thesis.tps

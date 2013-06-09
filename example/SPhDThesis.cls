@@ -194,9 +194,8 @@
 % -----------------------------------------------------------------------
 % A L G O R I T H M
 
-\RequirePackage[algo2e, ruled, linesnumbered]{algorithm2e}
+\RequirePackage[algo2e, ruled, linesnumbered, algochapter]{algorithm2e}
 \DontPrintSemicolon                      % Dont print semicolons at end of lines.
-\SetAlCapSty{}                           % Disable bold face for "Algorithm #" in caption.
 \algoheightrule       = \heavyrulewidth  % Set the width of the top and bottom rules.
 \algotitleheightrule  = \lightrulewidth  % Set the width of the middle rule.
 \SetAlgoInsideSkip{medskip}              % Set distance between middle rule and algorithm.
@@ -285,6 +284,12 @@
 
 % Remove dots.
 \renewcommand{\cftdotsep}{\cftnodots}
+
+% Remove dots from list of algorithms.
+% This is necessary because we use algorithm2e which mananges its own list of algorithms.
+\makeatletter
+	\renewcommand{\@dotsep}{5000}
+\makeatother
 
 % Format chapter entries differently in toc.
 \renewcommand{\cftchapfont}{\SgIntTocSectionFormat}
