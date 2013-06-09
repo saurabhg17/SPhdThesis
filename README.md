@@ -13,16 +13,20 @@ SPhDThesis document class can only be used with pdflatex and it doesn't work wit
 Here are some screenshots of the thesis written using SPhDThesis document class.
 
 ![Title page](title.png)
-<p align="center" style="font-weight:bold">Title Page</p>
+<p align="center" style="font-weight:bold"><strong>Title Page</strong></p>
+<br/>
 
 ![Title page](declaration.png)
-<p align="center" style="font-weight:bold">Declaration</p>
+<p align="center" style="font-weight:bold"><strong>Declaration</strong></p>
+<br/>
 
 ![Title page](table-of-contents.png)
-<p align="center" style="font-weight:bold">Table of Contents</p>
+<p align="center" style="font-weight:bold"><strong>Table of Contents</strong></p>
+<br/>
 
 ![Title page](chapter-title.png)
-<p align="center" style="font-weight:bold">Chapter Title</p>
+<p align="center" style="font-weight:bold"><strong>Chapter Title</strong></p>
+<br/>
 
 ![Title page](chapter-header.png)
-<p align="center" style="font-weight:bold">Chapter Header</p>
+<p align="center" style="font-weight:bold"><strong>Chapter Header</strong></p>
