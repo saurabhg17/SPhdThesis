@@ -1,10 +1,10 @@
 
-% SPhDThesis v1.0
+% SPhdThesis v1.0
 % By Saurabh Garg (saurabhgarg@mysoc.net)
-% Version 1.0 released 13.06.2012
+% Version 1.0 released 11.06.2013
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{SPhDThesis}[2012/06/12 v1.0 SPhDThesis class]
+\ProvidesClass{SPhdThesis}[2013/06/11 v1.0 SPhdThesis class]
 
 \RequirePackage{xkeyval}
 

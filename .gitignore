@@ -213,10 +213,10 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-/SPhDThesis.tps
+/SPhdThesis.tps
 /temp
-/SPhDThesis.tex
-/SPhDThesis.tcp
+/SPhdThesis.tex
+/SPhdThesis.tcp
 /example/temp
 /example/example.tps
 /example/example.tcp
@@ -224,3 +224,19 @@ pip-log.txt
 /example/thesis.tcp
 /example/thesis.tps
 /screenshots-originals
+/doc/SPhdThesis.tcp
+/doc/SPhdThesis.tex
+/doc/SPhdThesis.tps
+/doc/temp/SPhdThesis.aux
+/doc/temp/SPhdThesis.bbl
+/doc/temp/SPhdThesis.blg
+/doc/temp/SPhdThesis.out
+/doc/temp/SPhdThesis.pdf
+/doc/temp/SPhdThesis.synctex
+/doc/temp/SPhdThesis.toc
+/screenshots/originals/title.jpg
+/screenshots/originals/table-of-contents.jpg
+/screenshots/originals/declaration.jpg
+/screenshots/originals/chapter-title.jpg
+/screenshots/originals/chapter-header.jpg
+/screenshots/originals/algorithm.jpg
