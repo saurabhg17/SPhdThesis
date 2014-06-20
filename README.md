@@ -1,4 +1,4 @@
-# SPhdThesis #
+# SPhdThesis: A Latex template for writing Phd Thesis #
 SPhdThesis is a latex template (document class) for writing PhD thesis. I developed it while writing my PhD thesis in School of Computing (SoC), National University of Singapore (NUS). By default, it adheres to the [NUS Guidelines on Format of Research Thesis Submitted For Examination](http://www.nus.edu.sg/registrar/event/gdthesisexam.html "NUS Guidelines on Format of Research Thesis Submitted For Examination") (Link updated on 31/05/2014). However, it is quite easy to change it for a different guideline.
 
 ## Downloading ##
@@ -10,7 +10,7 @@ The easiest way to start using SPhdThesis is to copy the example folder and star
 For more details read `SPhdThesis.pdf`. It describes in detail how to use the document class and provide some hints on how to customize it. It also lists some useful tools for working with latex.
 
 ## Getting Help ##
-Raise a issue here on GitHub.
+Raise a [issue here](https://github.com/saurabhg17/SPhdThesis/issues "Raise an Issue") on GitHub.
 
 ## Screenshots ##
 ![Title page](screenshots/title.jpg)
